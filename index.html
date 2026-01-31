@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Jam App</title>
+  <title>Jam - Traffic Avoidance App</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Jam</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
 
-  <h1>Jam App</h1>
-  <div id="map"></div>
-  <div id="output"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Jam</h1>
+    <p>Your real-time traffic avoidance map for Addis Ababa</p>
+  </section>
 
+  <!-- Map Section -->
+  <section class="map-section">
+    <div id="map"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Jam. All rights reserved.</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
